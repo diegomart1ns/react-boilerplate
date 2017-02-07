@@ -23,7 +23,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(config.output.path));
 
 
-if (isDevelopment) {
+if (true) {
 	let compiler = webpack(config);
 	app.use(WebpackDevMiddleware(compiler, {
 		publicPath: config.output.publicPath,

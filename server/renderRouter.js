@@ -6,6 +6,7 @@ import { createStore, applyMiddleware } from 'redux';
 import thunkMiddleware from 'redux-thunk';
 import { Provider } from 'react-redux';
 
+import 'css-modules-require-hook/preset';
 import routes from '../app/src/routes';
 import reducers from '../app/src/container/reducers';
 
